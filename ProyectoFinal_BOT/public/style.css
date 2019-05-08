@@ -1,0 +1,238 @@
+/* ----------------------------------Cuerpo---------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: auto;
+}
+
+div {
+    word-wrap: break-word;
+    line-height: 1.25rem;
+}
+
+.chat-column {
+    padding: auto;
+    margin: auto;
+    text-align: left;
+}
+
+#chat {
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 10px;
+
+    height: 100%;
+
+    background-color: white;
+}
+
+.message-inner {
+    opacity: 0;
+    opacity: 1;
+    margin-top: 0.9375rem;
+
+}
+
+.chatbox {
+  align-self: center;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.link{
+    color: #323232;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.img-column {
+   width: 15%;
+   height: auto;
+   margin-top: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+/* ----------------------------------Usuario---------------------- */
+
+.from-user {
+    text-align: right;
+}
+
+.from-user .message-inner {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    background:#00AEAB;
+    border-radius: 1.25rem;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    display: inline-block;
+    margin-left: 2.5rem;
+    min-width: 2.5rem;
+}
+
+
+.from-user .message-inner p {
+    margin: 1.000rem;
+    padding: 0 0.75rem;
+}
+
+
+.from-user .message-inner:before, .from-user .message-inner:after {
+    content: "";
+    position: absolute;
+}
+
+.from-user .message-inner:before {
+    z-index: -2;
+    bottom: -0.375rem;
+    right: 0;
+    height: 0.375rem;
+    width: 0.5rem;
+    background:#00008b;
+
+}
+
+.from-user .message-inner:after {
+    z-index: -1;
+    bottom: -0.5rem;
+    right: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: #fff;
+    border-top-right-radius: 1.25rem;
+}
+
+
+
+/* ----------------------------------Watson--------------------- */
+
+
+.from-watson {
+    text-align: left;
+}
+
+.from-watson .message-inner {
+    position: relative;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    background:#01385F;
+    border-radius: 1.25rem;
+    border-bottom-left-radius: 0;
+    text-align: left;
+    display: inline-block;
+    margin-left: 2.5rem;
+    min-width: 2.5rem;
+}
+
+.from-watson .message-inner p {
+    margin: 1.000rem;
+    padding: 0 0.75rem;
+}
+
+.from-watson .message-inner:before, .from-watson .message-inner:after {
+    content: "";
+    position: absolute;
+}
+
+.from-watson .message-inner:before {
+    z-index: -2;
+    bottom: -0.375rem;
+    left: 0;
+    height: 0.375rem;
+    width: 0.5rem;
+    background:  #F1F2F7;
+}
+
+.from-watson .message-inner:after {
+    z-index: -1;
+    bottom: -0.5rem;
+    left: 0;
+    height: 0.5rem;
+    width: 0.5rem;
+    background: #fff;
+    border-top-left-radius: 1.25rem;
+}
+
+a {
+    color:#004798;
+    font-family: "New Gothic MT", sans-serif;
+
+}
+a.base:link, a.base:visited{
+    color:#004798;
+
+    font-family: "New Gothic MT", sans-serif;
+    font-size: 1.0rem;
+    padding: 0.5rem;
+    margin: .400rem 1.700rem .900rem .300rem;
+  }
+
+
+/* ---------------------------------------Generales--------------------- */
+
+
+.inputs {
+  width: 80%;
+
+}
+#entrada {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #323232;
+    letter-spacing: 0.015rem;
+    line-height: 1.3125rem;
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 0.125rem;
+    text-align: center;
+    margin-top: 50px;
+
+
+    margin-bottom: -0.125rem;
+    overflow: auto;
+
+    background-color: white;
+}
+
+.inputOutline {
+    display: block;
+    border-bottom: 0.0625rem solid #73AD21;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+
+    .chat-column {
+        padding-top: 4rem;
+    }
+}
